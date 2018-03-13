@@ -832,9 +832,9 @@ module.exports = {
     backgroundPosition: ['responsive'],
     backgroundRepeat: ['responsive'],
     backgroundSize: ['responsive'],
-    borderColors: ['responsive', 'hover'],
+    borderColors: ['responsive', 'hover', 'focus'],
     borderRadius: ['responsive'],
-    borderStyle: ['responsive'],
+    borderStyle: ['responsive', 'focus'],
     borderWidths: ['responsive'],
     cursor: ['responsive'],
     display: ['responsive'],
@@ -901,7 +901,7 @@ module.exports = {
   */
 
   options: {
-    prefix: '',
+    prefix: 'tw-',
     important: false,
     separator: ':',
   },

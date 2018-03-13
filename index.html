@@ -6,22 +6,22 @@
     <title>Compile Tailwind with Gulp</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
-    <h1 class="text-purple bg-grey-lighter p-8 mt-8 mb-8">Hello Tailwind!</h1>
+<body class="tw-font-sans tw-leading-normal tw-p-8">
+    <h1 class="tw-text-purple tw-bg-grey-lighter tw-p-8 tw-mt-8 tw-mb-8">Hello Tailwind!</h1>
 
     <section class="
-    py-crazy
-    bg-purple-lightest
-    sm:bg-pink-light
-    md:bg-green
-    lg:bg-blue
-    range:border-black
-    range:border-b-8">
-        <div class="container mx-auto px-6">
-            <h2 class="text-purple-darker mt-0 mb-3 leading-tight skip:uppercase">
+    tw-py-crazy
+    tw-bg-purple-lightest
+    tw-sm:bg-pink-light
+    tw-md:bg-green
+    tw-lg:bg-blue
+    tw-range:border-black
+    tw-range:border-b-8">
+        <div class="tw-container tw-mx-auto tw-px-6">
+            <h2 class="tw-text-purple-darker tw-mt-0 tw-mb-3 tw-leading-tight tw-skip:uppercase">
                 Paragraph Title
             </h2>
-            <p class="text-purple-darker">
+            <p class="tw-text-purple-darker">
                 <!-- start slipsum code -->
 
                 You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.
@@ -29,23 +29,79 @@
         </div>
     </section>
 
-    <div class="mx-4">
-        <p class="mb-4 mt-4">
-            I am <a href="#" class="text-purple hover:text-orange focus:bg-yellow">text link</a>
-        </p>
+    <p class="tw-mb-4 tw-mt-4">
+        I am <a href="#" class="tw-text-purple hover:tw-text-orange focus:tw-bg-yellow">text link</a>
+    </p>
 
-        <button class="block w-full py-2 px-4 rounded-sm mb-2 text-white bg-purple-light hover:bg-black" tabindex="0">
-            Click me
-        </button>
-    </div>
+    <button class="tw-block tw-w-full tw-py-2 tw-px-4 tw-rounded-sm tw-mb-2 tw-text-white tw-bg-purple-light hover:tw-bg-black" tabindex="0">
+        Click me
+    </button>
 
-    <div class="group p-4 inline-block bg-grey-light hover:bg-purple-dark my-4">
-        <h2 class="mb-1 text-grey-darkest group-hover:text-white">
+    <div class="group tw-p-4 tw-inline-block tw-bg-grey-light hover:tw-bg-purple-dark tw-my-4">
+        <h2 class="tw-mb-1 tw-text-grey-darkest group-hover:tw-text-white">
             Headline Text
         </h2>
-        <p class="text-grey-darker group-hover:text-white">
+        <p class="tw-text-grey-darker group-hover:tw-text-white">
             This is the paragraph copy - it's pretty plain, really.
         </p>
+    </div>
+
+    <h2 class="tw-text-xxl tw-mb-2">Hover State</h2>
+    <p class="tw-mb-4">
+        I am a <a href="#" class="tw-text-purple hover:tw-text-purple-dark hover:tw-bg-yellow">text link</a>
+    </p>
+
+    <h2 class="tw-text-xxl tw-mt-8 tw-mb-2">
+        Focus State
+    </h2>
+    <input type="text" class="tw-p-2 tw-mb-2 tw-rounded-sm tw-border-2 tw-border-grey focus:tw-border-red" placeholder="Your name...">
+    <input type="text" class="tw-p-2 tw-mb-2 tw-rounded-sm tw-border-2 tw-border-grey focus:tw-border-green" placeholder="Your name...">
+    <input type="text" class="tw-p-2 tw-mb-2 tw-rounded-sm tw-border-2 tw-border-grey focus:tw-border-blue" placeholder="Your name...">
+
+    <div class="group tw-bg-grey-light tw-mt-3 tw-p-4 hover:tw-bg-purple tw-mb-3">
+        <h2 class="tw-text-grey-darkest tw-mb-2 group-hover:tw-text-white">Card headline</h2>
+        <div class="tw-text-grey-darkest group-hover:tw-text-white">You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.
+        </div>
+    </div>
+
+    <h2 class="hero-headline tw-text-blue tw-font-light tw-mb-4">Headline Text</h2>
+
+    <div class="bg-gradient-blue md:bg-gradient-orange tw-rounded-lg tw-text-white tw-p-4 tw-mb-2">
+        <h2>Gradients</h2>
+    </div>
+
+    <div class="bg-gradient-orange md:bg-gradient-blue tw-rounded-lg tw-text-white tw-p-4 tw-mb-2">
+        <h2>...are back!</h2>
+    </div>
+    <h2 class="tw-mt-4 tw-mb-2">Without Abstraction</h2>
+    <button class="tw-bg-purple hover:tw-bg-purple-dark tw-text-white tw-font-bold tw-px-4 tw-py-2 tw-rounded tw-mr-1 tw-mt-2 tw-mb-2">Button</button>
+    <button class="tw-bg-pink hover:tw-bg-pink-dark tw-text-white tw-font-bold tw-px-4 tw-py-2 tw-rounded tw-mr-1 tw-mt-2 tw-mb-2">Button</button>
+    <button class="tw-bg-teal hover:tw-bg-teal-dark tw-text-white tw-font-bold tw-px-4 tw-py-2 tw-rounded tw-mr-1 tw-mt-2 tw-mb-2">Button</button>
+
+    <h2 class="tw-mt-4 tw-mb-2">With Abstraction</h2>
+    <button class="button tw-mr-1 tw-mb-2">Button</button>
+    <button class="button button--pink tw-mr-1 tw-mb-2">Button</button>
+    <button class="button button--teal tw-mr-1 tw-mb-2">Button</button>
+
+    <button class="button button--pill tw-mr-1 tw-mb-2">Button</button>
+    <button class="button button--pill button--pink tw-mr-1 tw-mb-2">Button</button>
+    <button class="button button--pill button--teal tw-mr-1 tw-mb-2">Button</button>
+
+    <button class="button button--square tw-mr-1 tw-mb-2">Button</button>
+    <button class="button button--square button--pink tw-mr-1 tw-mb-2">Button</button>
+    <button class="button button--square button--teal tw-mr-1 tw-mb-2">Button</button>
+    <div class="tw-my-4">
+        <div class="tw-shadow-lg tw-rounded tw-overflow-hidden sm:tw-flex">
+            <div style="background: url(./img/image1.jpeg) no-repeat center center" class="tw-bg-contain tw-h-48 tw-w-auto sm:tw-h-auto sm:tw-w-64 tw-max-w-md">
+
+            </div>
+            <!--<img class="rounded" src="./img/image1.jpeg" alt="">-->
+            <div class="tw-p-4">
+                <h2 class="tw-font-black tw-mb-3">Hello Tailwind!</h2>
+                <p class="tw-text-sm tw-text-grey-dark tw-mb-4">You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
+                <button class="tw-bg-purple hover:tw-bg-purple-light tw-text-white tw-py-3 tw-px-6 tw-font-bold tw-rounded-full tw-mt-1 tw-mt-2">Click me</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
